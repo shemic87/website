@@ -14,7 +14,9 @@
   },
   "license": "MIT",
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "grunt": "^1.0.1",
@@ -37,9 +39,11 @@
     "grunt-uncss": "^0.6.1",
     "grunt-usemin": "^3.1.1",
     "load-grunt-tasks": "^3.5.2",
-    "time-grunt": "^1.4.0"
+    "time-grunt": "^1.4.0",
+    "snyk": "^1.316.1"
   },
   "engines": {
     "node": ">=8"
-  }
+  },
+  "snyk": true
 }
